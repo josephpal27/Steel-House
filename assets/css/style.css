@@ -262,7 +262,7 @@ header i{
 
 /* About Start */
 .about{
-    padding: 3rem 7%;
+    padding: 3rem 7% 5.5rem 7%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -314,3 +314,115 @@ header i{
     background-color: #5a679b;
 }
 /* About End */
+
+/* What We Do Start */
+.what-we-do{
+    padding: 5rem 7% 3rem 7%;
+    background-color: #f8f8f8;
+}
+.what-we-do span{
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 650;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #2e2c41;
+}
+.what-we-do span i{
+    font-size: calc(0.4rem + 0.5vw);
+    margin-right: 0.6rem;
+    color: #6f7cb1;
+}
+.what-we-do h2{
+    font-size: calc(3rem + 0.5vw);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.what-we-do .swiper-wrapper{
+    padding-bottom: 6rem;
+}
+.what-we-do .what-we-do-card{
+    background-color: #fff;
+    padding: 3rem 2rem;
+    position: relative;
+}
+.what-we-do .what-we-do-card img{
+    width: 60px;
+}
+.what-we-do .what-we-do-card span{
+    display: block;
+    font-size: calc(0.9rem + 0.5vw);
+    font-weight: 600;
+    margin-top: 1.7rem;
+    text-transform: none;
+}
+.what-we-do .what-we-do-card p{
+    font-size: calc(0.6rem + 0.5vw);
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.what-we-do .what-we-do-card a{
+    color: #2e2c41;
+}
+.what-we-do .what-we-do-card a:hover{
+    color: #5a679b;
+}
+.what-we-do .what-we-do-card i{
+    font-size: calc(1rem + 0.5vw);
+    margin-top: 3rem;
+}
+.what-we-do .what-we-do-card::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #6f7cb1;
+    transition: all 0.3s ease;
+}
+.what-we-do .what-we-do-card:hover::after{
+    width: 100%;
+}
+.what-we-do .custom-nav {
+  position: absolute;
+  top: 90%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  cursor: pointer;
+  z-index: 10;
+}
+.what-we-do .swiper-button-next::after,
+.what-we-do .swiper-button-prev::after {
+  content: '' !important;
+  display: none !important;
+}
+.what-we-do .custom-nav i {
+  font-size: 18px;
+  color: #333;
+  pointer-events: none;
+}
+.what-we-do .custom-nav:hover {
+  background: #6f7cb1;
+}
+.what-we-do .custom-nav:hover i{
+  color: #fff;
+}
+.what-we-do .swiper-button-prev{
+    left: 89%;
+}
+.what-we-do .swiper-button-next{
+    right: 1rem;
+}
+/* What We Do End */
+
+
+
+
