@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: unset !important;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header Start */
+header{
+    background-color: #2e2c41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 5%
+}
+header span,
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: calc(0.55rem + 0.5vw);
+}
+header i{
+    color: #d4ddff;
+    margin-right: 0.4rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    header{
+        padding: 0.68rem 5%
+    }
+    header span,
+    header a{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    header{
+        padding: 0.55rem 5%
+    }
+    header span,
+    header a{
+        font-size: calc(0.48rem + 0.5vw);
+    }
+}
+/* Header End */
+
+/* Navbar Start */
+.navbar {
+    background-color: #eeeeee;
+    padding: 1rem 5%;
+}
+.navbar .navbar-brand img {
+    width: 200px;
+}
+.navbar .navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1.5rem;
+}
+.navbar .nav-link {
+    color: #000;
+    font-weight: 600;
+    font-size: calc(0.65rem + 0.5vw);
+    padding: 0.6rem 1.5rem !important;
+    border-radius: 30px;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #fff;
+    background-color: #6f7cb1;
+}
+.navbar .social-btns {
+    display: flex;
+    gap: 1rem;
+}
+.navbar .social-btns a {
+    background-color: #6f7cb1;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    display: block;
+    color: #fff;
+    font-size: calc(0.8rem + 0.5vw);
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    transition: all 0.2s ease;
+}
+.navbar .social-btns a:hover {
+    background-color: #5a679b;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .navbar {
+        padding: 0.7rem 5%;
+    }
+    .navbar .navbar-brand img {
+        width: 200px;
+    }
+    .navbar .nav-link {
+        font-size: calc(0.6rem + 0.5vw);
+        padding: 0.57rem 1.5rem !important;
+    }
+    .navbar .social-btns a {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        font-size: calc(0.75rem + 0.5vw);
+        border-top-right-radius: 11px;
+        border-bottom-left-radius: 11px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .navbar {
+        padding: 0.55rem 5%;
+    }
+    .navbar .navbar-brand img {
+        width: 180px;
+    }
+    .navbar .nav-link {
+        font-size: calc(0.55rem + 0.5vw);
+        padding: 0.5rem 1.5rem !important;
+    }
+    .navbar .social-btns a {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: calc(0.7rem + 0.5vw);
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+/* Navbar End */
