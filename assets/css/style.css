@@ -317,7 +317,7 @@ header i{
 
 /* What We Do Start */
 .what-we-do{
-    padding: 5rem 7% 3rem 7%;
+    padding: 5rem 7% 5rem 7%;
     background-color: #f8f8f8;
 }
 .what-we-do span{
@@ -423,6 +423,208 @@ header i{
 }
 /* What We Do End */
 
+/* Industry Cards Row Start */
+.industry-cards-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.industry-cards-row .industry-card{
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+.industry-cards-row .industry-card img{
+    width: 100%;
+}
+.industry-cards-row .industry-card .layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2e2c416a;
+    transition: all 0.2s ease;
+}
+.industry-cards-row .industry-card .layer a{
+    color: #6f7cb1;
+}
+.industry-cards-row .industry-card .layer i{
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: calc(0.8rem + 0.5vw);
+    border-radius: 50%;
+    position: absolute;
+    right: 2.5rem;
+    top: 2.5rem;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+.industry-cards-row .industry-card .layer i:hover{
+    transform: rotate(0);
+}
+.industry-cards-row .industry-card .layer span{
+    color: #fff;
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 600;
+    position: relative;
+    left: 3rem;
+    top: 110%;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.industry-cards-row .industry-card .layer:hover{
+    background-color: #1d1c2dd0;
+}
+.industry-cards-row .industry-card .layer:hover i{
+    opacity: 1;
+}
+.industry-cards-row .industry-card .layer:hover span{
+    opacity: 1;
+    top: 80%;
+}
+.industry-cards-row .industry-card::after{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #6f7cb1;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+.industry-cards-row .industry-card:hover::after{
+    opacity: 1;
+}
+/* Industry Cards Row End */
 
+/*  Clients Row Start */
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 7%;
+    border-bottom: 2px solid #bdbdbd;
+}
+.clients .client-box{
+    width: 20%;
+    padding: 6rem 0;
+    border-right: 2px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients .client-box:first-child{
+    justify-content: flex-start;
+}
+.clients .client-box:last-child{
+    border-right: none;
+    justify-content: flex-end;
+}
+/*  Clients Row End */
 
+/* Project Counter Start */
+.project-counter{
+    padding: 5rem 7% 5.5rem 7%;
+    margin-top: 6rem;
+    background-color: #2e2c41;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-counter .count-box{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-counter .count-box span{
+    display: block;
+    color: #ffffffcc;
+    font-size: calc(5rem + 0.5vw);
+    font-weight: 600;
+}
+.project-counter .count-box p{
+    margin: 0;
+    color: #fff;
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 500;
+}
+/* Project Counter End */
 
+/* Blogs Start */
+.blogs{
+    padding: 5rem 7%;
+}
+.blogs span{
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 650;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #2e2c41;
+}
+.blogs span i{
+    font-size: calc(0.4rem + 0.5vw);
+    margin-right: 0.6rem;
+    color: #6f7cb1;
+}
+.blogs h3{
+    font-size: calc(3rem + 0.5vw);
+    margin-top: 2rem;
+}
+.blogs .blog-cards-row{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blogs .blog-cards-row .blog-card{
+    width: 31%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+.blogs .blog-cards-row .blog-card .blog-image{
+    overflow: hidden;
+}
+.blogs .blog-cards-row .blog-card img{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.blogs .blog-cards-row .blog-card img:hover{
+    scale: 1.05;
+}
+.blogs .blog-cards-row .blog-card .blog-desc{
+    padding: 1.5rem 1rem;
+}
+.blogs .blog-cards-row .blog-card .blog-desc h4{
+    font-size: calc(0.9rem + 0.5vw);
+    font-weight: 600;
+}
+.blogs .blog-cards-row .blog-card .blog-desc p{
+    font-size: calc(0.6rem + 0.5vw);
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: #333;
+}
+.blogs .blog-cards-row .blog-card .blog-desc button{
+    font-size: calc(0.55rem + 0.5vw);
+    font-weight: 500;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background-color: #6f7cb1;
+    color: #fff;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+}
+.blogs .blog-cards-row .blog-card .blog-desc button:hover{
+    background-color: #5a679b;
+}
+/* Blogs End */
