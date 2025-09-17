@@ -498,7 +498,7 @@ header i{
 }
 .clients .client-box{
     width: 20%;
-    padding: 6rem 0;
+    padding: 3rem 0;
     border-right: 2px solid #bdbdbd;
     display: flex;
     justify-content: center;

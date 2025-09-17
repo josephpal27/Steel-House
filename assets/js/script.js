@@ -1,3 +1,10 @@
+// Refresh AOS on scroll
+window.onscroll = () => {
+    AOS.refresh();
+}
+
+// ------------------------------------------------------------------------------------------------------------
+
 // Functionality For Home Page What We Do Slider
 const prMediaSwiper = new Swiper(".what-we-do .what-we-do-slider", {
   slidesPerView: 3,
