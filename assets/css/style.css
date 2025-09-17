@@ -195,6 +195,37 @@ header i{
 .home-banner .banner-content button:hover{
     background-color: #5a679b;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .home-banner .banner-content span{
+        font-size: calc(3.5rem + 0.5vw);
+    }
+    .home-banner .banner-content p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 1.7rem;
+    }
+    .home-banner .banner-content button{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 0.8rem;
+        padding: 0.45rem 1.8rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .home-banner .banner-content span{
+        font-size: calc(3rem + 0.5vw);
+    }
+    .home-banner .banner-content p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 1.2rem;
+    }
+    .home-banner .banner-content button{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.8rem;
+        padding: 0.4rem 1.7rem;
+    }
+}
 /* Banner End */
 
 /*  Feature Cards Start */
