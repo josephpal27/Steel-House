@@ -272,6 +272,8 @@ header i{
 }
 .about .about-image img{
     width: 100%;
+    border-radius: 7px;
+    box-shadow: #6f7cb190 10px 10px 2px;
 }
 .about .about-content{
     width: 49%;
@@ -297,21 +299,6 @@ header i{
 .about .about-content p{
     font-size: calc(0.65rem + 0.5vw);
     font-weight: 420;
-}
-.about .about-content button{
-    font-size: calc(0.65rem + 0.5vw);
-    font-weight: 500;
-    margin-top: 1rem;
-    border: none;
-    outline: none;
-    padding: 0.5rem 2rem;
-    background-color: #6f7cb1;
-    color: #fff;
-    border-radius: 2px;
-    transition: all 0.2s ease;
-}
-.about .about-content button:hover{
-    background-color: #5a679b;
 }
 /* About End */
 
@@ -516,6 +503,11 @@ header i{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.clients .client-box img{
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
 }
 .clients .client-box:first-child{
     justify-content: flex-start;
