@@ -55,11 +55,11 @@ header i{
 
 /* Navbar Start */
 .navbar {
-    background-color: #fbfbfb;
-    padding: 1rem 7%;
+    background-color: #fff;
+    padding: 0.5rem 7%;
 }
 .navbar .navbar-brand img {
-    width: 200px;
+    width: 95px;
 }
 .navbar .navbar-nav {
     position: absolute;
@@ -558,7 +558,7 @@ header i{
 
 /* Blogs Start */
 .blogs{
-    padding: 5rem 7%;
+    padding: 5rem 7% 6rem 7%;
 }
 .blogs span{
     font-size: calc(1rem + 0.5vw);
@@ -628,3 +628,84 @@ header i{
     background-color: #5a679b;
 }
 /* Blogs End */
+
+/* Footer Start */
+footer{
+    background-color: #2e2c41;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 5rem 7% 4rem 7%;
+}
+.footer-content .content-box:nth-child(1){
+    width: 30%;
+}
+.footer-content .content-box .foot-logo img{
+    width: 120px;
+    border-radius: 7px;
+}
+.footer-content .content-box p{
+    color: #fff;
+    margin-top: 1.5rem;
+    font-size: calc(0.55rem + 0.5vw);
+    font-weight: 400;
+}
+.footer-content .content-box span{
+    color: #fff;
+    font-size: calc(0.9rem + 0.5vw);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2rem;
+}
+.footer-content .content-box a{
+    color: #fff;
+    font-size: calc(0.55rem + 0.5vw);
+    display: block;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.footer-content .content-box a i{
+    margin-right: 10px;
+}
+.footer-content .content-box a:hover{
+    color: #93a5ec;
+}
+.footer-content .content-box .social-btns {
+    display: flex;
+    gap: 1rem;
+}
+.footer-content .content-box .social-btns a {
+    background-color: #6f7cb1;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    display: block;
+    color: #fff;
+    font-size: calc(0.8rem + 0.5vw);
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    transition: all 0.2s ease;
+}
+.footer-content .content-box .social-btns a:hover {
+    background-color: #5a679b;
+}
+.footer-content .content-box .social-btns a i {
+    margin: 0;
+}
+.footer-copyright{
+    background-color: #5a679b;
+    padding: 1rem 0;
+}
+.footer-copyright p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font: calc(0.55rem + 0.5vw);
+    font-weight: 400;
+}
+/* Footer End */
