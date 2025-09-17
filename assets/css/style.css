@@ -104,10 +104,10 @@ header i{
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .navbar {
-        padding: 0.7rem 7%;
+        padding: 0.45rem 7%;
     }
     .navbar .navbar-brand img {
-        width: 200px;
+        width: 85px;
     }
     .navbar .nav-link {
         font-size: calc(0.6rem + 0.5vw);
@@ -125,10 +125,10 @@ header i{
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
     .navbar {
-        padding: 0.55rem 7%;
+        padding: 0.45rem 7%;
     }
     .navbar .navbar-brand img {
-        width: 180px;
+        width: 75px;
     }
     .navbar .nav-link {
         font-size: calc(0.55rem + 0.5vw);
