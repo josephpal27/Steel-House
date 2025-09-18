@@ -112,6 +112,15 @@
 .contact-form button:hover {
   background: #5a679b;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    
+}
 /* Contact Section End */
 
 /* Contact Info Section Start */
