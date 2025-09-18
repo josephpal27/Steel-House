@@ -116,7 +116,7 @@
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .contact-section {
-        padding: 5.5rem 7% 3rem 7%;
+        padding: 5.5rem 7% 2rem 7%;
     }
     .contact-container {
         gap: 47px;
@@ -143,30 +143,30 @@
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
     .contact-section {
-        padding: 5.5rem 7% 3rem 7%;
+        padding: 5rem 7% 2rem 7%;
     }
     .contact-container {
-        gap: 47px;
+        gap: 40px;
     }
     .contact-form {
-        padding: 2.7rem;
+        padding: 2.5rem;
     }
     .contact-form h2 {
-        font-size: calc(1.5rem + 0.5vw);
-        margin-bottom: 1.9rem;
+        font-size: calc(1.4rem + 0.5vw);
+        margin-bottom: 1.8rem;
     }
     .contact-form .form-row {
-        gap: 1.1rem;
+        gap: 1rem;
     }
     .contact-form input,
     .contact-form textarea {
-        padding: 12px;
-        margin-bottom: 1.1rem;
-        font-size: calc(0.57rem + 0.5vw);
+        padding: 10px;
+        margin-bottom: 1rem;
+        font-size: calc(0.54rem + 0.5vw);
     }
     .contact-form button {
-        padding: 13px 0;
-        font-size: calc(0.63rem + 0.5vw);
+        padding: 11px 0;
+        font-size: calc(0.6rem + 0.5vw);
     }
 }
 /* Contact Section End */
