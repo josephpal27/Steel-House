@@ -174,7 +174,7 @@
 /* Contact Info Section Start */
 .contact-info {
   width: 100%;
-  padding: 4rem 7% 7rem 7%;
+  padding: 3.5rem 7% 7rem 7%;
 }
 .info-container {
   display: flex;
@@ -216,23 +216,37 @@
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .contact-info {
-        padding: 4rem 7% 7rem 7%;
+        padding: 4rem 7% 6rem 7%;
     }
     .info-box {
-        padding: 2.5rem 1rem;
+        padding: 2.3rem 0.8rem;
     }
     .info-icon {
-        width: 80px;
-        height: 80px;
-        margin: 0 auto 30px;
-        font-size: 28px;
+        width: 75px;
+        height: 75px;
+        margin: 0 auto 25px;
+        font-size: 27px;
     }
     .info-box p {
-        font-size: calc(0.6rem + 0.5vw);
+        font-size: calc(0.57rem + 0.5vw);
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
-    
+    .contact-info {
+        padding: 3rem 7% 5rem 7%;
+    }
+    .info-box {
+        padding: 2rem 0.5rem;
+    }
+    .info-icon {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto 22px;
+        font-size: 25px;
+    }
+    .info-box p {
+        font-size: calc(0.55rem + 0.5vw);
+    }
 }
 /* Contact Info Section End */
