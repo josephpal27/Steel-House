@@ -108,7 +108,7 @@
 /* Media Queries */
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .products{
-        padding: 6rem 7% 4rem 7%;
+        padding: 5rem 7% 3rem 7%;
     }
     .products .product-card{
         margin-bottom: 3.1rem;
