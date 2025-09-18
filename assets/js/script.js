@@ -12,7 +12,11 @@ const prMediaSwiper = new Swiper(".what-we-do .what-we-do-slider", {
   speed: 800,
   spaceBetween: 25,
   grabCursor: true,
-  autoplay: false,
+  autoplay: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".what-we-do .swiper-button-next",
     prevEl: ".what-we-do .swiper-button-prev",

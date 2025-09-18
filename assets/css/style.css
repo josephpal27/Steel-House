@@ -876,6 +876,8 @@ header i{
     width: 31%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
+    border-radius: 7px;
+    overflow: hidden;
 }
 .blogs .blog-cards-row .blog-card .blog-image{
     overflow: hidden;
