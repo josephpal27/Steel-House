@@ -128,6 +128,23 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
-    
+    .products{
+        padding: 5rem 7% 3rem 7%;
+    }
+    .products .product-card{
+        margin-bottom: 2.8rem;
+    }
+    .products .product-card:hover img{
+        scale: 1.04;
+    }
+    .products .product-card .card-desc .product-icon img{
+        width: 52px;
+    }
+    .products .product-card .card-desc span{
+        font-size: calc(0.85rem + 0.5vw);
+    }
+    .products .product-card .card-desc p{
+        font-size: calc(0.56rem + 0.5vw);
+    }
 }
 /* Products End */
