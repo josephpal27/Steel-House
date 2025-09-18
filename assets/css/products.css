@@ -104,4 +104,13 @@
     margin-bottom: 0;
     color: #333;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    
+}
 /* Products End */
