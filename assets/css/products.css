@@ -111,24 +111,19 @@
         padding: 5rem 7% 3rem 7%;
     }
     .products .product-card{
-        margin-bottom: 3.1rem;
+        margin-bottom: 2.8rem;
     }
     .products .product-card:hover img{
-        scale: 1.05;
-    }
-    .products .product-card .card-desc{
-        padding: 2rem 1.2rem;
+        scale: 1.04;
     }
     .products .product-card .card-desc .product-icon img{
-        width: 55px;
-        margin-bottom: 1.8rem;
+        width: 52px;
     }
     .products .product-card .card-desc span{
-        font-size: calc(0.9rem + 0.5vw);
+        font-size: calc(0.85rem + 0.5vw);
     }
     .products .product-card .card-desc p{
-        font-size: calc(0.6rem + 0.5vw);
-        margin-top: 1rem;
+        font-size: calc(0.56rem + 0.5vw);
     }
 }
 
