@@ -31,6 +31,25 @@
   font-weight: 700;
   margin: 0;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .banner {
+        height: 320px;
+    }
+    .banner-content h1 {
+        font-size: calc(3.2rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .banner {
+        height: 280px;
+    }
+    .banner-content h1 {
+        font-size: calc(2.9rem + 0.5vw);
+    }
+}
 /* Banner Section End */
 
 /* Contact Section Start */
