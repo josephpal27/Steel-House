@@ -5,7 +5,7 @@ window.onscroll = () => {
 
 // ------------------------------------------------------------------------------------------------------------
 
-// Functionality For Navbar and Offcanvas (Mobile) About Us Section Srolling
+// Functionality For Navbar and Offcanvas (Mobile) About Us Section Srolling in HOME PAGE
 function setupSmoothScroll(selector) {
   document.querySelectorAll(selector).forEach((link) => {
     link.addEventListener("click", function (e) {
