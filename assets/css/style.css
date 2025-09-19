@@ -947,6 +947,27 @@ header i{
         top: 110%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .industry-cards-row .industry-card{
+        width: 50%;
+    }
+    .industry-cards-row .industry-card .layer i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: calc(0.8rem + 0.5vw);
+        right: 1rem;
+        top: 1rem;
+    }
+    .industry-cards-row .industry-card .layer span{
+        font-size: calc(0.7rem + 0.5vw);
+        left: 1rem;
+    }
+    .industry-cards-row .industry-card::after{
+        height: 4px;
+    }
+}
 /* Industry Cards Row End */
 
 /*  Clients Row Start */
