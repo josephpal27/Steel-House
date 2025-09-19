@@ -315,7 +315,7 @@ header i{
         display: none;
     }
     .home-banner .banner-content p{
-        font-size: calc(0.55rem + 0.5vw);
+        font-size: calc(0.6rem + 0.5vw);
         margin-top: 0.5rem;
         width: 100%;
         margin-bottom: 0;
@@ -444,6 +444,28 @@ header i{
     .feature-cards-row{
         padding: 0 1rem 3rem 1rem;
         margin-top: 1rem;
+    }
+    .feature-cards-row .feature-card{
+        width: 100%;
+        padding: 1rem 1rem 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .feature-cards-row .feature-card img{
+        width: 50px;
+    }
+    .feature-cards-row .feature-card span{
+        font-size: calc(1rem + 0.5vw);
+        margin-top: 1.2rem;
+    }
+    .feature-cards-row .feature-card p{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-top: 0.7rem;
+    }
+    .feature-cards-row .feature-card .overlay{
+        width: 13px;
+        height: 13px;
+        bottom: 0;
+        right: 0;
     }
 }
 /*  Feature Cards End */
