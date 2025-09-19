@@ -954,7 +954,8 @@ header i{
 .project-counter{
     padding: 5rem 7% 5.5rem 7%;
     margin-top: 6rem;
-    background-color: #2e2c41;
+    margin-bottom: 6rem;
+    background-color: #bdbdbd;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -968,7 +969,7 @@ header i{
 }
 .project-counter .count-box span{
     display: block;
-    color: #ffffffcc;
+    color: #ffffffe0;
     font-size: calc(5rem + 0.5vw);
     font-weight: 600;
 }
@@ -1008,7 +1009,7 @@ header i{
 /* Project Counter End */
 
 /* Blogs Start */
-.blogs{
+/* .blogs{
     padding: 5rem 7% 6rem 7%;
 }
 .blogs span{
@@ -1079,10 +1080,10 @@ header i{
 }
 .blogs .blog-cards-row .blog-card .blog-desc button:hover{
     background-color: #5a679b;
-}
+} */
 
 /* Media Queries */
-@media screen and (min-width: 1230px) and (max-width: 1399px) {
+/* @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .blogs{
         padding: 4.5rem 7% 5rem 7%;
     }
@@ -1149,7 +1150,7 @@ header i{
         margin-top: 1.5rem;
         padding: 0.37rem 1rem;
     }
-}
+} */
 /* Blogs End */
 
 /* Footer Start */
