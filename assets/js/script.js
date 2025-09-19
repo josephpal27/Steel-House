@@ -5,6 +5,46 @@ window.onscroll = () => {
 
 // ------------------------------------------------------------------------------------------------------------
 
+// Functionality For Navbar and Offcanvas (Mobile) About Us Section Srolling
+function setupSmoothScroll(selector) {
+  document.querySelectorAll(selector).forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+
+      if (targetId.startsWith("#")) {
+        e.preventDefault(); // stop default jump & url hash
+
+        // If inside offcanvas, close it first
+        const offcanvasEl = document.getElementById("mobileMenu");
+        if (offcanvasEl && offcanvasEl.classList.contains("show")) {
+          const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+          offcanvas.hide();
+
+          offcanvasEl.addEventListener(
+            "hidden.bs.offcanvas",
+            function handler() {
+              document
+                .querySelector(targetId)
+                .scrollIntoView({ behavior: "smooth" });
+              offcanvasEl.removeEventListener("hidden.bs.offcanvas", handler);
+            }
+          );
+        } else {
+          // Desktop (no offcanvas) → scroll directly
+          document
+            .querySelector(targetId)
+            .scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    });
+  });
+}
+
+// Apply to both desktop and mobile nav-links
+setupSmoothScroll(".navbar .nav-link, #mobileMenu .nav-link, footer a");
+
+// ------------------------------------------------------------------------------------------------------------
+
 // Functionality For Home Page What We Do Slider
 const prMediaSwiper = new Swiper(".what-we-do .what-we-do-slider", {
   slidesPerView: 3,
