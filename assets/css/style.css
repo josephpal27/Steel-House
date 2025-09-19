@@ -127,7 +127,7 @@ header i{
 }
 #mobileMenu .nav-link.active{
     color: #fff;
-    background-color: #2e2c41;
+    background-color: #2e2c41 !important;
 }
 #mobileMenu .nav-link:hover{
     background-color: #5a679b;
