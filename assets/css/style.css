@@ -315,15 +315,15 @@ header i{
         display: none;
     }
     .home-banner .banner-content p{
-        font-size: calc(0.6rem + 0.5vw);
+        font-size: calc(0.52rem + 0.5vw);
         margin-top: 0.5rem;
         width: 100%;
         margin-bottom: 0;
     }
     .home-banner .banner-content button{
-        font-size: calc(0.5rem + 0.5vw);
-        margin-top: 0.5rem;
-        padding: 0.3rem 1rem;
+        font-size: calc(0.48rem + 0.5vw);
+        margin-top: 0.4rem;
+        padding: 0.25rem 0.7rem;
     }
 }
 /* Banner End */
