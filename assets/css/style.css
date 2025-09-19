@@ -783,6 +783,59 @@ header i{
         left: 88%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .what-we-do{
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .what-we-do span{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .what-we-do span i{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+    .what-we-do h2{
+        font-size: calc(1.5rem + 0.5vw);
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    .what-we-do .swiper-wrapper{
+        padding-bottom: 5rem;
+    }
+    .what-we-do .what-we-do-card{
+        padding: 2rem 1.5rem;
+    }
+    .what-we-do .what-we-do-card img{
+        width: 50px;
+    }
+    .what-we-do .what-we-do-card span{
+        font-size: calc(0.95rem + 0.5vw);
+        margin-top: 1.5rem;
+    }
+    .what-we-do .what-we-do-card p{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .what-we-do .what-we-do-card i{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-top: 2rem;
+    }
+    .what-we-do .custom-nav {
+        width: 40px;
+        height: 40px;
+    }
+    .what-we-do .custom-nav i {
+        font-size: 16px;
+    }
+    .what-we-do .swiper-button-prev{
+        left: 40%;
+        transform: translateX(-50%);
+    }
+    .what-we-do .swiper-button-next{
+        left: 60%;
+        transform: translateX(-50%);
+    }
+}
 /* What We Do End */
 
 /* Industry Cards Row Start */
