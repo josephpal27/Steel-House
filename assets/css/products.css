@@ -159,5 +159,27 @@
     }
 }
 
-
+@media screen and (max-width: 768px) {
+    .products{
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+    .products .product-card{
+        margin-bottom: 0.8rem;
+        width: 48.2%;
+    }
+    .products .product-card .card-desc{
+        padding: 0.8rem 0.5rem;
+    }
+    .products .product-card .card-desc .product-icon img{
+        width: 20px;
+        margin-bottom: 0.5rem;
+    }
+    .products .product-card .card-desc span{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    .products .product-card .card-desc p{
+        font-size: calc(0.54rem + 0.5vw);
+        margin-top: 0.3rem;
+    }
+}
 /* Products End */
