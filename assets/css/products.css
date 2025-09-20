@@ -50,6 +50,16 @@
         font-size: calc(2.9rem + 0.5vw);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 170px;
+    }
+    .banner-content h1 {
+        font-size: calc(1.7rem + 0.5vw);
+        white-space: nowrap;
+    }
+}
 /* Banner Section End */
 
 /* Products Start */
@@ -148,4 +158,6 @@
         margin-top: 0.8rem;
     }
 }
+
+
 /* Products End */
