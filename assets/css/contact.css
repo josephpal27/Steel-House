@@ -179,6 +179,41 @@
         font-size: calc(0.6rem + 0.5vw);
     }
 }
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 1.5rem 1rem 0 1rem;
+  }
+  .contact-container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .contact-map {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 0.7rem;
+  }
+  .contact-form h2 {
+    font-size: calc(1.2rem + 0.5vw);
+    margin-bottom: 1rem;
+  }
+  .contact-form .form-row {
+    gap: 0.7rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px 8px;
+    margin-bottom: 0.7rem;
+    font-size: calc(0.65rem + 0.5vw);
+  }
+  .contact-form button {
+    padding: 10px 0;
+    font-size: calc(0.8rem + 0.5vw);
+  }
+}
 /* Contact Section End */
 
 /* Contact Info Section Start */
