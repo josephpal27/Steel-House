@@ -25,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Link to Swipper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css"/>
+    <!-- Notyf Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf/notyf.min.css">
     <!-- CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
@@ -139,13 +141,15 @@
             <!-- Contact Form -->
             <div class="contact-form">
                 <h2>Lets talk...</h2>
-                <form action="" method="post">
+                <form action="" method="post" id="contact-form">
+                    <input type="hidden" name="access_key" value="14a96f4b-0d53-4bc9-a6c1-0e2627f7f4c5">
+                    <input type="hidden" name="subject" value="New Contact Form Submission from steelhouse.net.in">
                     <div class="form-row">
-                        <input type="text" name="name" placeholder="Your Full Name*" required>
-                        <input type="email" name="email" placeholder="E-mail Address*" required>
+                        <input type="text" name="Name" placeholder="Your Full Name*" required>
+                        <input type="email" name="Email" placeholder="E-mail Address*" required>
                     </div>
-                    <input type="text" name="subject" placeholder="Subject*" required>
-                    <textarea name="message" placeholder="Message*" rows="5" required></textarea>
+                    <input type="text" name="Subject" placeholder="Subject*" required>
+                    <textarea name="Message" placeholder="Message*" rows="5" required></textarea>
                     <button type="submit">SEND MESSAGE</button>
                 </form>
             </div>
@@ -225,6 +229,9 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
 
+    <!-- Notyf -->
+    <script src="https://cdn.jsdelivr.net/npm/notyf/notyf.min.js"></script>
+
     <!-- AOS Animation JS Link -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -233,6 +240,38 @@
 
     <!-- JS Link -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Functionality For Form Submission & Notification -->
+    <script>
+        const notyf = new Notyf({
+            duration: 3000,
+            position: { x: 'right', y: 'top' },
+            dismissible: true
+        });
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            })
+                .then(async (response) => {
+                    let result = await response.json();
+                    if (response.ok) {
+                        notyf.success("Message Sent Successfully!");
+                        this.reset();
+                    } else {
+                        notyf.error(result.message);
+                    }
+                })
+                .catch((error) => {
+                    notyf.error("Something Went Wrong!");
+                });
+        });
+    </script>
 
 </body>
 
