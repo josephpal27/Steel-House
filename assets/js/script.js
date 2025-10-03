@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function countUp(el) {
         const target = parseInt(el.getAttribute("data-count").replace(/\D/g, "")); // handles "70+"
         let count = 0;
-        const speed = 1000; // smaller = faster
+        const speed = 800; // smaller = faster
         const increment = Math.ceil(target / speed);
 
         const updateCount = () => {
