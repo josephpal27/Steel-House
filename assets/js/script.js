@@ -75,12 +75,19 @@ const prMediaSwiper = new Swiper(".what-we-do .what-we-do-slider", {
 document.addEventListener("DOMContentLoaded", () => {
     const counters = document.querySelectorAll(".count-box span");
 
-    // Count up animation
     function countUp(el) {
-        const target = parseInt(el.getAttribute("data-count").replace(/\D/g, "")); // handles "70+"
+        const target = parseInt(el.getAttribute("data-count").replace(/\D/g, ""));
         let count = 0;
-        const speed = 800; // smaller = faster
-        const increment = Math.ceil(target / speed);
+
+        // Set custom increments
+        let increment;
+        if (target >= 2000) {
+            increment = 10; // for 2000
+        } else if (target >= 500) {
+            increment = 3; // for 500
+        } else {
+            increment = 1; // default small steps
+        }
 
         const updateCount = () => {
             count += increment;
@@ -88,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 el.textContent = count;
                 requestAnimationFrame(updateCount);
             } else {
-                el.textContent = el.getAttribute("data-count"); // show final with + if any
+                el.textContent = el.getAttribute("data-count"); // show final with +
             }
         };
 
